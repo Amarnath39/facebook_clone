@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header{
+            background-color: #3b5998;
+            height: 80px;
+            position: relative; 
+        }
+        #fbhead{
+            color: white;
+            position: relative;
+            margin-left: 160px;
+            /* left: 109px; */
+            top: 20px;
+            font-size: 32px;
+        }
+        #login{
+            position: absolute;
+            right: 356px;
+            top: 11px;
+            
+        }
+        #account{
+            position: relative;
+            top: 58px;
+            left: 1130px;
+            font-size: large;
+        }
+        #acc-cap{
+            font-weight: bold;
+            font-size: 25px;
+            position: relative;
+            margin-top: 30px;
+        }
+        #cap{
+            font-size: small;
+            position: relative;
+            left: 16px;
+        }
+        #name{
+            position: relative;
+            top: 85px;
+            left: 1100px;
+        }
+        #n{
+            position: relative;
+            width: 100px;
+        }
+        #emai{
+            position: absolute;
+            width: 100px;
+        }
+        .login_label{
+            color: white;
+        }
+        .log-btn{
+            background-color: #3b5998;
+            color: white;
+        }
+        .main{
+            background:linear-gradient(white,#D3D8E8);
+            width: 100%;
+            height: 600px;
+        }
+        .left{
+            padding-left: 100px;
+            padding-top: 50px;
+        }
+        .left-cap{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .para{
+            color:#3b5998;
+            font-size: 22px;
+            font-weight: bold;
+            padding-left: 50px;
+        }
+        .right{
+            position: absolute;
+            left: 932px;
+            top: 100px;
+            border: thin white;
+            height: 500px
+        }
+        #email{
+            position: absolute;
+            top: 50px;
+        }
+        .form{
+            width: 352px;
+            height: 20px;
+        }
+        #bday{
+            color: #898F9C;
+            font-weight: bold;
+            font-size: 13px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #gend{
+            color: #898F9C;
+            font-size: 13px;
+            font-weight: bold;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #bday-help{
+            position: relative;
+            top: 4px;
+            font-size: 9px;
+            display: inline-block;
+            width: 120px;
+            text-decoration: none;
+        }
+        .terms-and-conditions{
+            position: relative;
+            bottom: 20px;
+            font-size: 11px;
+            color:#898F9C ;
+        }
+        #fbcopy{
+            color: #898F9C;
+            position: relative;
+            right: 900px;
+            top: 135px;
+        }
+        .langua{
+            position: relative;
+            top: 100px;
+            right: 775px;
+            color: #3b5998;
+            font-weight: bold;
+            border: none;
+            width: 62px;
+            font-size: 11px;
+        }
+        .list{
+            display: inline;
+            color:#3b5998;
+            font-weight: bold;
+            position: relative;
+            top: 135px;
+            margin-right: 15px;
+        }
+        .down-list{
+            font-size: 12px;
+        position: relative;
+        bottom: 50px;
+        }
+        .acc-p{
+            position: relative;
+            bottom: 15px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h2 id="fbhead">facebook</h2>
+        <div id="login">
+            <table>
+                <form action="">
+                    <tr>
+                        <td><label class="login_label">email or mobile number</label></td>
+                        <td><label class="login_label">password</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" required autocomplete="off"></td>
+                        <td><input type="password" required autocomplete="off"></td>
+                        <td><input class="log-btn" type="submit" value="login"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="login_label">forgotten account?</td>
+                        <!-- <a href="" class="login_label">forgotten account?</a> -->
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </div>
+    <div class="main">
+        <div class="left">
+            <h3 class="para">Facebook helps you to connect and share with the <br> people in your life</h3>
+            <img src="fb logo.jpg" style="width: 530px;" alt="">
+        </div>
+        <div class="right">
+            <form action="">
+                <p id="acc-cap">Create an account</p>
+                <!-- <p style="position: relative;
+                    top: -23px;
+                    left: 9px;">its free and always will be</p> -->
+                    <p class="acc-p">its free and always will be</p>
+                <input style="height: 20px;" type="text" placeholder="Firstname">
+                <input style="height: 20px;"  type="text" placeholder="Surname">
+                <br><br>
+                <label></label>
+                <input class="form" type="email" placeholder="email or mobile number" autocomplete="off" required>
+                <br><br>
+                <label></label>
+                <input class="form" type="password" placeholder="new password" required>
+                <br><br>
+                <label id="bday">Birthday</label>
+                <br>
+                <input type="date" name="" id="datebar">
+                <a href="" id="bday-help">why i need to provide my birthday?</a>
+                <br><br>
+                <label for="" id="gend">Gender</label>
+                <br>
+                <input type="radio" name="Gender" id="">Male
+                <input type="radio" name="Gender" id="">Female
+                <input type="radio" name="Gender" id="">Custom
+                <br><br><br><br>
+                <div class="terms-and-conditions">
+                    By clicking Create an account,you agree to our Terms <br> and confirms that you have read our Data Policy,including our cokiee <br>Policy.You may recieve SMS messages notifications from  <br>Facebook and can opt out at any time
+                </div>
+                <label for=""></label>
+                <input style="height: 40px; width: 150px; background-color:#42B72A;border: none;color:#ffffff;" type="button" value="Create an account">
+            </form>
+            <p id="fbcopy">facebook © 2008 </p>
+            <label for="" class="lang"></label>
+            <select name="" id="" class="langua">
+                <option value="" >English</option>
+                <option value="">Chinese</option>
+                <option value="">Porstugese</option>
+            </select>
+            <div class="down-list">
+                <p class="list">About</p>
+                <p class="list">Adevertising</p>
+                <p class="list">Develepors</p>
+                <p class="list">Jobs</p>
+                <p class="list">Terms</p>
+                <p class="list">Find Friends</p>
+                <p class="list">Privacy</p>
+                <p class="list">Help</p>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
